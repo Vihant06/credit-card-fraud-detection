@@ -1,0 +1,28 @@
+{
+  "features": [
+    "transaction_amount",
+    "transaction_hour",
+    "international_transaction",
+    "card_present",
+    "transactions_last_24h"
+  ],
+  "target": "is_fraud",
+  "categorical_encoding": {
+    "international_transaction": {
+      "No": 0,
+      "Yes": 1
+    },
+    "card_present": {
+      "No": 0,
+      "Yes": 1
+    }
+  },
+  "numeric_features": [
+    "transaction_amount",
+    "transaction_hour",
+    "transactions_last_24h"
+  ],
+  "decision_threshold": 0.9114435315132141,
+  "random_seed": 42,
+  "dataset_type": "synthetic"
+}
